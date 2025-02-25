@@ -1,12 +1,17 @@
-Go to componet
 <app-navbar></app-navbar>
 
-<h1 class="text-3x1 font-bold underline text-center mt-10">
- Angular v19.1 + Tailwind css 4.0 <span class="text-indigo-600">¡Hola Tailwind CSS en angular 19¿!</span>
+<h1 class="text-4xl font-extrabold text-center text-gray-900 mt-10 mb-8">
+  Angular v19.1 + Tailwind CSS 4.0 
+  <span class="text-indigo-600">¡Hola Tailwind CSS en Angular 19!</span>
 </h1>
 
-<div class="text-center">
-<button mat-raised-button color="primary">
-  Click Me
-</button>
+<div class="text-center mb-10">
+  <button mat-raised-button 
+    class="px-8 py-3 text-lg font-medium text-white bg-indigo-600 rounded-full shadow-lg hover:bg-indigo-700 transition-colors duration-300 transform hover:scale-105"
+    color="primary">
+    Click Me
+  </button>
 </div>
+
+<!-- Agrega esto para que las rutas se rendericen aquí -->
+<router-outlet></router-outlet>
