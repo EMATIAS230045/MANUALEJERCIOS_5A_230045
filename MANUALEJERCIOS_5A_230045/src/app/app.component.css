@@ -1,0 +1,35 @@
+.navbar{
+    display: flex;
+    flex: 1;
+    height: 6vh;
+}
+.navbar app-navbar{
+    display: flex;
+    height: 6vh;
+    flex: 0 0 110%; 
+}
+.container{
+    display: flex;
+    flex: 1;
+    height: 94vh;    /*  asegura que tome todo el espacio disponible */
+}
+.container app-sidebar{
+flex: 0 0 44%;
+display: flex;
+flex-direction: column;
+}
+.content{
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+}
+.content app-breadcrumb {
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+}
+.content app-page-content {
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+}

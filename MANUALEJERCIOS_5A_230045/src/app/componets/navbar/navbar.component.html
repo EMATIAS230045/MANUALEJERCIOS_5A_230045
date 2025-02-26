@@ -12,6 +12,9 @@
         <button mat-button class="text-white font-medium hover:text-indigo-200 transition-colors duration-300">Tareas</button>
         <button mat-button class="text-white font-medium hover:text-indigo-200 transition-colors duration-300">Examen Práctico</button>
         <button mat-button class="text-white font-medium hover:text-indigo-200 transition-colors duration-300">Acerca de</button>
+        
+        <!-- Botón con menú de contacto -->
+        <button mat-button [matMenuTriggerFor]="contactMenu" class="text-white font-medium hover:text-indigo-200 transition-colors duration-300">Contacto</button>
     </nav>
 
     <!-- Icono de Usuario con Menú -->
@@ -21,8 +24,16 @@
 
     <!-- Menú desplegable para opciones de sesión -->
     <mat-menu #userMenu="matMenu">
+        <button mat-menu-item>Erick Matias<br>Granillo Mejia</button>
         <button mat-menu-item>Perfil</button>
         <button mat-menu-item>Configuración</button>
         <button mat-menu-item>Cerrar sesión</button>
+    </mat-menu>
+
+    <!-- Menú desplegable de contacto -->
+    <mat-menu #contactMenu="matMenu">
+        <button mat-menu-item>Teléfono</button>
+        <button mat-menu-item>Dirección</button>
+        <button mat-menu-item>Correo</button>
     </mat-menu>
 </mat-toolbar>

@@ -1,6 +1,12 @@
-<app-navbar></app-navbar>
-
-<h1 class="text-4xl font-extrabold text-center text-gray-900 mt-10 mb-8">
+<div class="navbar"><app-navbar></app-navbar></div>
+<div class="container">
+  <app-sidebar></app-sidebar>
+<div class="content">
+  <app-breadcrumb></app-breadcrumb>
+  <app-page-content></app-page-content>
+</div>
+</div>
+<!-- <h1 class="text-4xl font-extrabold text-center text-gray-900 mt-10 mb-8">
   Angular v19.1 + Tailwind CSS 4.0 
   <span class="text-indigo-600">¡Hola Tailwind CSS en Angular 19!</span>
 </h1>
@@ -11,7 +17,7 @@
     color="primary">
     Click Me
   </button>
-</div>
+</div> -->
 
 <!-- Agrega esto para que las rutas se rendericen aquí -->
 <router-outlet></router-outlet>
